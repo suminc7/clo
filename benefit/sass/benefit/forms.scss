@@ -1,0 +1,86 @@
+@import "./mixins";
+
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="checkbox"] {
+  &:not(:checked), &:checked {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &+label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url("~static/images/benefit/ui_check_off.svg") no-repeat center;
+      width: 20px;
+      height: 20px;
+      background-size: 12px;
+    }
+
+    &:after {
+      display: none;
+      content: url("~static/images/benefit/ui_check_on.svg");
+    }
+  }
+
+  &:checked+label:before {
+    background: url("~static/images/benefit/ui_check_on.svg") no-repeat center;
+    background-size: 12px;
+  }
+}
+
+[type="radio"] {
+  &:not(:checked), &:checked {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &+label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url("~static/images/benefit/ui_radio_off.svg") no-repeat center;
+      width: 20px;
+      height: 20px;
+      background-size: 12px;
+    }
+
+    &:after {
+      display: none;
+      content: url("~static/images/benefit/ui_radio_on.svg");
+    }
+  }
+
+  &:checked+label:before {
+    background: url("~static/images/benefit/ui_radio_on.svg") no-repeat center;
+    background-size: 12px;
+  }
+}

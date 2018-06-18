@@ -1,0 +1,17 @@
+$border-radius: 10px 10px 20px 20px;
+$hei: 550px;
+
+/* clear  */
+.clearfix {
+  display: block;
+  clear: both;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    clear: both;
+  }
+}

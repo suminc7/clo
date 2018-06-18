@@ -1,0 +1,9 @@
+{
+  "extends": ["vue"],
+  "plugins": ["vue", "html"],
+  "rules": {
+    "indent": ["error", 4],
+    "space-before-function-paren": ["error", "never"],
+    "object-curly-spacing": ["error", "always"]
+  }
+}

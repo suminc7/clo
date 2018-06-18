@@ -1,0 +1,23 @@
+
+html, body  {
+  height: auto;
+}
+
+html {
+  overflow-y: scroll;
+}
+body {
+  overflow-y: hidden;
+}
+
+header.store {
+  border-bottom: 1px solid #e5e5e5;
+  position: fixed;
+  background-color: white!important;
+}
+
+.gutter-reset {
+  padding-left: 0;
+  padding-right: 0;
+}
+

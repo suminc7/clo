@@ -1,0 +1,750 @@
+.ws {
+  @include media-breakpoint-down(md) {
+    white-space: pre-line;
+  }
+}
+
+
+body.ko{
+  .koEn { // 한국어에서만 영어로 나오는 텍스트
+    font-family: $font-avenir;
+  }
+}
+
+body.zh {
+  .zhEn { // 중국어에서만 영어로
+    font-family: $font-avenir;
+  }
+}
+
+.en { // 한국어, 중국어에서 모두 영어로 나오는 텍스트
+  font-family: $font-avenir;
+}
+
+
+
+/* Font Style */
+.font-family-thin {
+  font-weight: 100;
+}
+.font-family-ultlt {
+  font-weight: 200;
+}
+.font-family-regular {
+  font-weight: 300;
+}
+.font-family-medium {
+  font-weight: 400;
+}
+.font-family-demi {
+  font-weight: 500;
+}
+.font-family-bold {
+  font-weight: 600;
+}
+.font-family-heavy {
+  font-weight: 900;
+}
+
+// font size
+.font-23 {
+  font-size: 23px;
+}
+
+/* ko */
+.font-family-ko-thin {
+  font-weight: 100;
+}
+
+.font-family-ko-light {
+  font-weight: 300;
+}
+
+.font-family-ko-regular {
+  font-weight: 400;
+}
+
+.font-family-ko-medium {
+  font-weight: 500;
+}
+
+.font-family-ko-bold {
+  font-weight: 700;
+}
+
+.font-family-ko-black {
+  font-weight: 900;
+}
+
+/* HEAD 공통 Style */
+.title-sub-style01-black,
+.title-sub-style01-white {
+  @include font-style(17px, 2.5px);
+//  @extend .font-family-demi;
+  @extend .uppercase;
+  line-height: 27px;
+
+  @include media-breakpoint-up(xl) {
+    @include font-style(25px, 4px);
+    line-height: 32px;
+  }
+  @include media-breakpoint-up(xxl) {
+    @include font-style(35px, 8px);
+    line-height: 55px;
+  }
+}
+
+.title-sub-style02-black,
+.title-sub-style02-white {
+  @include font-style(25px, 4px);
+  @extend .font-family-medium;
+  @extend .uppercase;
+  line-height: 32px;
+}
+
+.title-sub-style03-black,
+.title-sub-style03-white {
+  @include font-style(18px, 2.5px);
+  @extend .font-family-demi;
+  @extend .uppercase;
+  line-height: 32px;
+}
+
+.title-sub-style04-black,
+.title-sub-style04-white {
+  @include font-style(15px, 1.8px);
+ // @extend .font-family-demi;
+  @extend .uppercase;
+  line-height: 20px;
+}
+
+.title-sub-style05-black,
+.title-sub-style05-white {
+  @include font-style(20px, 0.7px);
+  @extend .font-family-medium;
+  line-height: 32px;
+}
+
+.contents-txt-style01-black,
+.contents-txt-style01-white {
+  @include font-style(17px, 0.3px);
+ // font-family: $font-lato;
+}
+
+.contents-txt-style02-black,
+.contents-txt-style02-white {
+  @include font-style(11px, 0.3px);
+ // font-family: $font-lato;
+  line-height: 15px;
+
+  @include media-breakpoint-up(xl) {
+    @include font-style(13px, 0.3px);
+    line-height: 18px;
+  }
+  @include media-breakpoint-up(xxl) {
+    @include font-style(15px, 0.3px);
+    line-height: 20px;
+  }
+}
+
+.contents-txt-style03-black,
+.contents-txt-style03-white {
+  @include font-style(13px, 0.3px);
+ // font-family: $font-lato;
+  line-height: 18px;
+}
+
+.contents-txt-style04-black,
+.contents-txt-style04-white {
+  @include font-style(11px, 0.3px);
+  //font-family: $font-lato;
+  line-height: 16px;
+}
+
+.contents-txt-style05-black,
+.contents-txt-style05-white {
+  @include font-style(10px, 0.3px);
+ // font-family: $font-lato;
+  line-height: 16px;
+}
+
+.italic-txt-style01-black,
+.italic-txt-style01-white {
+  @include font-style(17px, 0.3px);
+ // font-family: $font-lato;
+  font-style: italic;
+  line-height: 30px;
+}
+
+.italic-txt-style02-black,
+.italic-txt-style02-white {
+  @include font-style(12px, 0.3px);
+ // font-family: $font-lato;
+  font-style: italic;
+}
+
+.italic-txt-style03-black,
+.italic-txt-style03-white,
+.italic-txt-style03-blue,
+.italic-txt-style03-gray {
+  @include font-style(9px, 0.3px);
+ // font-family: $font-lato;
+  font-style: italic;
+}
+.italic-txt-style03-blue {
+  color: $color-blue;
+}
+.italic-txt-style03-gray {
+  color: $color-gray-02;
+}
+
+.menu-style01-black,
+.menu-style01-white {
+  @include font-style(15px, 3px);
+  @extend .font-family-demi;
+  @extend .uppercase;
+}
+
+.menu-style02-black,
+.menu-style02-white {
+  @include font-style(11px, 2px);
+  @extend .font-family-demi;
+  @extend .uppercase;
+}
+
+.menu-style03-black,
+.menu-style03-white {
+  @include font-style(11px, 0.5px);
+  @extend .font-family-demi;
+  @extend .uppercase;
+  line-height: 30px;
+}
+
+.menu-style04-black,
+.menu-style04-white {
+  @include font-style(10px, 2px);
+  @extend .font-family-demi;
+  @extend .uppercase;
+  line-height: 22px;
+}
+
+.stitle-style01-white {
+  @include font-style(38px, -0.5px);
+  @extend .font-family-thin;
+  line-height: 32px;
+}
+
+.stitle-style02-black,
+.stitle-style02-white {
+  @include font-style(30px, -0.5px);
+  @extend .font-family-thin;
+  line-height: 32px;
+}
+
+.btn-txt-style01-black,
+.btn-txt-style01-black2,
+.btn-txt-style01-white,
+.btn-txt-style01-blue,
+.btn-txt-style01-gray,
+.btn-txt-style01-white02 {
+  @include font-style(11px, 2px);
+  @extend .font-family-demi;
+  @extend .uppercase;
+}
+
+.btn-txt-style01-black2 {
+  color: $color-default-black;
+}
+
+.btn-txt-style01-blue {
+  color: $color-blue;
+}
+
+.btn-txt-style01-gray {
+  color: $color-gray;
+}
+
+.btn-txt-style01-white02 {
+  color: $color-white-03;
+}
+
+.btn-txt-style02-black,
+.btn-txt-style02-black2,
+.btn-txt-style02-white,
+.btn-txt-style02-blue,
+.btn-txt-style02-gray,
+.btn-txt-style02-white02 {
+  @include font-style(15px, 3px);
+  @extend .font-family-demi;
+  @extend .uppercase;
+}
+
+.btn-txt-style03-black,
+.btn-txt-style03-black2,
+.btn-txt-style03-white,
+.btn-txt-style03-blue,
+.btn-txt-style03-gray,
+.btn-txt-style03-white02 {
+  @include font-style(10px, 0.7px);
+  @extend .font-family-demi;
+  @extend .uppercase;
+}
+
+.btn-txt-style01-black2,
+.btn-txt-style02-black2,
+.btn-txt-style03-black2 {
+  color: $color-black;
+}
+
+.btn-txt-style01-blue,
+.btn-txt-style02-blue,
+.btn-txt-style03-blue {
+  color: $color-blue;
+}
+
+.btn-txt-style01-gray,
+.btn-txt-style02-gray,
+.btn-txt-style03-gray {
+  color: $color-gray;
+}
+
+.btn-txt-style01-white02,
+.btn-txt-style02-white02,
+.btn-txt-style03-white02 {
+  color: $color-white-03;
+}
+
+/* HEAD 공통 Color */
+.title-sub-style01-black,
+.title-sub-style02-black,
+.title-sub-style03-black,
+.title-sub-style04-black,
+.title-sub-style05-black,
+.contents-txt-style01-black,
+.contents-txt-style02-black,
+.contents-txt-style03-black,
+.contents-txt-style04-black,
+.contents-txt-style05-black,
+.italic-txt-style01-black,
+.italic-txt-style02-black,
+.italic-txt-style03-black,
+.menu-style01-black,
+.menu-style02-black,
+.menu-style03-black,
+.menu-style04-black,
+.stitle-style02-black,
+.btn-txt-style01-black,
+.btn-txt-style02-black,
+.btn-txt-style03-black {
+  color: $color-default-black;
+}
+
+.title-sub-style01-white,
+.title-sub-style02-white,
+.title-sub-style03-white,
+.title-sub-style04-white,
+.title-sub-style05-white,
+.contents-txt-style01-white,
+.contents-txt-style02-white,
+.contents-txt-style03-white,
+.contents-txt-style04-white,
+.contents-txt-style05-white,
+.italic-txt-style01-white,
+.italic-txt-style02-white,
+.italic-txt-style03-white,
+.menu-style01-white,
+.menu-style02-white,
+.menu-style03-white,
+.menu-style04-white,
+.btn-txt-style01-white,
+.btn-txt-style02-white,
+.btn-txt-style03-white,
+.stitle-style01-white,
+.stitle-style02-white {
+  color: $color-white;
+}
+
+.text-red {
+  color: #f25454 !important;
+}
+
+.text-blue {
+  color: #69AFFF;
+}
+
+// in english, contents font-family is different with title
+body.en {
+  .contents,
+  .contents-txt-style01-white,
+  .contents-txt-style02-white,
+  .contents-txt-style03-white,
+  .contents-txt-style04-white,
+  .contents-txt-style05-white,
+  .contents-txt-style01-black,
+  .contents-txt-style02-black,
+  .contents-txt-style03-black,
+  .contents-txt-style04-black,
+  .contents-txt-style05-black {
+    font-family: $font-lato;
+  }
+}
+
+
+
+
+
+@include media-breakpoint-down(lg) {
+  /* HEAD 공통 Style */
+  .title-sub-style02-black,
+  .title-sub-style02-white {
+    @include font-style(17px, 2.5px);
+    line-height: 27px;
+  }
+
+  .title-sub-style03-black,
+  .title-sub-style03-white {
+    @include font-style(13px, 2px);
+    line-height: 20px;
+  }
+
+  .title-sub-style04-black,
+  .title-sub-style04-white {
+    @include font-style(10px, 1px);
+    line-height: 20px;
+  }
+
+  .title-sub-style05-black,
+  .title-sub-style05-white {
+    @include font-style(15px, 1.8px);
+    line-height: 32px;
+  }
+
+  .contents-txt-style01-black,
+  .contents-txt-style01-white {
+    @include font-style(15px, 0.3px);
+    line-height: 22px;
+  }
+
+  .contents-txt-style03-black,
+  .contents-txt-style03-white {
+    @include font-style(11px, 0.3px);
+    line-height: 15px;
+  }
+
+  .contents-txt-style04-black,
+  .contents-txt-style04-white {
+    @include font-style(9px, 0.3px);
+    line-height: 12px;
+  }
+
+  .italic-txt-style01-black,
+  .italic-txt-style01-white {
+    @include font-style(13px, 0.3px);
+  }
+
+  .italic-txt-style02-black,
+  .italic-txt-style02-white {
+    @include font-style(9px, 0.3px);
+    line-height: 12px;
+  }
+
+  .menu-style01-black,
+  .menu-style01-white {
+    @include font-style(13px, 2.5px);
+  }
+
+  .menu-style03-black,
+  .menu-style03-white {
+    @include font-style(9px, 0.4px);
+  }
+}
+
+body.ko,
+body.zh {
+
+  /* HEAD 공통 Style */
+  .title-sub-style01-black,
+  .title-sub-style01-white {
+    @include font-style(18px, 1px);
+    @extend .font-family-ko-light;
+    line-height: 32px;
+
+    @include media-breakpoint-up(xl) {
+      @include font-style(26px, 0);
+      line-height: 38px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      @include font-style(42px, 1px);
+      line-height: 65px;
+    }
+
+    &.en {
+      @include font-style(17px, 2.5px);
+      @extend .font-family-demi;
+      @extend .uppercase;
+      line-height: 27px;
+
+      @include media-breakpoint-up(xl) {
+        @include font-style(25px, 4px);
+        line-height: 32px;
+      }
+      @include media-breakpoint-up(xxl) {
+        @include font-style(35px, 8px);
+        line-height: 55px;
+      }
+    }
+  }
+
+  .title-sub-style02-black,
+  .title-sub-style02-white {
+    @include font-style(26px, 0);
+    @extend .font-family-ko-regular;
+    line-height: 38px;
+
+    &.en {
+      @include font-style(25px, 4px);
+      @extend .font-family-medium;
+      @extend .uppercase;
+      line-height: 32px;
+    }
+  }
+
+  .title-sub-style03-black,
+  .title-sub-style03-white {
+    @include font-style(18px, 1px);
+    @extend .font-family-ko-light;
+    line-height: 32px;
+  }
+
+  .title-sub-style04-black,
+  .title-sub-style04-white {
+    @include font-style(16px, 0);
+    @extend .font-family-ko-light;
+    line-height: 20px;
+
+    &.en {
+      @include font-style(15px, 1.8px);
+      @extend .font-family-demi;
+      @extend .uppercase;
+      line-height: 20px;
+    }
+  }
+
+  .title-sub-style05-black,
+  .title-sub-style05-white {
+    @include font-style(20px, 0.7px);
+    @extend .font-family-ko-light;
+    line-height: 32px;
+  }
+
+  .contents-txt-style01-black,
+  .contents-txt-style01-white {
+    @include font-style(18px, -0.2px);
+    @extend .font-family-ko-light;
+   // font-family: $font-lato;
+    line-height: 25px;
+  }
+
+  .contents-txt-style02-black,
+  .contents-txt-style02-white {
+    @include font-style(12px, -0.2px);
+    @extend .font-family-ko-light;
+    //font-family: $font-lato;
+    line-height: 16px;
+
+    @include font-style(11px, 0.3px);
+   //font-family: $font-lato;
+    line-height: 15px;
+
+    @include media-breakpoint-up(xl) {
+      @include font-style(14px, -0.2px);
+      line-height: 18px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      @include font-style(16px, -0.2px);
+    //  font-family: $font-lato;
+      line-height: 24px;
+    }
+
+    .en {
+      @include font-style(11px, 0.3px);
+    //  font-family: $font-lato;
+      line-height: 15px;
+
+      @include media-breakpoint-up(xl) {
+        @include font-style(13px, 0.3px);
+        line-height: 18px;
+      }
+      @include media-breakpoint-up(xxl) {
+        @include font-style(15px, 0.3px);
+        line-height: 20px;
+      }
+    }
+  }
+
+  .contents-txt-style03-black,
+  .contents-txt-style03-white {
+    @include font-style(14px, -0.2px);
+    @extend .font-family-ko-light;
+   // font-family: $font-lato;
+    line-height: 18px;
+  }
+
+  .contents-txt-style04-black,
+  .contents-txt-style04-white {
+    @include font-style(12px, -0.2px);
+    @extend .font-family-ko-regular;
+  //  font-family: $font-lato;
+    line-height: 16px;
+    &.en {
+      @include font-style(11px, 0.3px);
+   //   font-family: $font-lato;
+      line-height: 16px;
+    }
+  }
+
+  .contents-txt-style05-black,
+  .contents-txt-style05-white {
+    @include font-style(12px, 0);
+    @extend .font-family-ko-regular;
+   // font-family: $font-lato;
+    line-height: 20px;
+  }
+
+  .italic-txt-style01-black,
+  .italic-txt-style01-white {
+    @include font-style(18px, -0.2px);
+    @extend .font-family-ko-light;
+   // font-family: $font-lato;
+    font-style: normal;
+    line-height: 30px;
+  }
+
+  .italic-txt-style02-black,
+  .italic-txt-style02-white {
+    @include font-style(12px, -0.2px);
+    @extend .font-family-ko-regular;
+    //font-family: $font-lato;
+    font-style: normal;
+    line-height: 16px;
+  }
+
+  .italic-txt-style03-black,
+  .italic-txt-style03-white,
+  .italic-txt-style03-blue,
+  .italic-txt-style03-gray {
+    @include font-style(10px, -0.2px);
+    @extend .font-family-ko-regular;
+    //font-family: $font-lato;
+    font-style: normal;
+    line-height: 15px;
+  }
+
+  .stitle-style02-black,
+  .stitle-style02-white {
+    @include font-style(30px, -0.2px);
+    @extend .font-family-ko-light;
+    line-height: 32px;
+  }
+
+  .btn-txt-style01-black,
+  .btn-txt-style01-black2,
+  .btn-txt-style01-white,
+  .btn-txt-style01-blue,
+  .btn-txt-style01-gray,
+  .btn-txt-style01-white02 {
+    @include font-style(13px, 3.5px);
+    @extend .font-family-ko-medium;
+    @extend .uppercase;
+
+    &.en {
+      @include font-style(11px, 2px);
+      @extend .font-family-demi;
+      @extend .uppercase;
+    }
+  }
+
+  .btn-txt-style02-black,
+  .btn-txt-style02-black2,
+  .btn-txt-style02-white,
+  .btn-txt-style02-blue,
+  .btn-txt-style02-gray,
+  .btn-txt-style02-white02 {
+    @include font-style(16px, 3.5px);
+    @extend .font-family-ko-medium;
+    @extend .uppercase;
+  }
+
+  .btn-txt-style03-black,
+  .btn-txt-style03-black2,
+  .btn-txt-style03-white,
+  .btn-txt-style03-blue,
+  .btn-txt-style03-gray,
+  .btn-txt-style03-white02 {
+    @include font-style(12px, 0);
+    @extend .font-family-ko-medium;
+    @extend .uppercase;
+  }
+
+  @include media-breakpoint-down(lg) {
+    /* HEAD 공통 Style */
+    .title-sub-style02-black,
+    .title-sub-style02-white {
+      @include font-style(18px, 0);
+
+      &.en {
+        @include font-style(17px, 2.5px);
+        line-height: 27px;
+      }
+    }
+
+    .title-sub-style03-black,
+    .title-sub-style03-white {
+      @include font-style(16px, 0);
+      line-height: 20px;
+    }
+
+    .title-sub-style04-black,
+    .title-sub-style04-white {
+      @include font-style(12px, 0);
+      line-height: 20px;
+    }
+
+    .title-sub-style05-black,
+    .title-sub-style05-white {
+      @include font-style(16px, 0px);
+      line-height: 20px;
+    }
+
+    .contents-txt-style01-black,
+    .contents-txt-style01-white {
+      @include font-style(16px, -0.2px);
+      line-height: 24px;
+    }
+
+    .contents-txt-style03-black,
+    .contents-txt-style03-white {
+      @include font-style(12px, -0.2px);
+      line-height: 18px;
+    }
+
+    .contents-txt-style04-black,
+    .contents-txt-style04-white {
+      @include font-style(10px, -0.2px);
+      line-height: 15px;
+    }
+
+    .italic-txt-style01-black,
+    .italic-txt-style01-white {
+      @include font-style(16px, -0.2px);
+      line-height: 30px;
+    }
+
+    .italic-txt-style02-black,
+    .italic-txt-style02-white {
+      @include font-style(10px, -0.2px);
+    }
+  }
+}

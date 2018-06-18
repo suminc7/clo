@@ -1,0 +1,51 @@
+
+/* Responsive - VIdeo */
+.video-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index:-1;
+  &.main {
+    height: 1020px;
+    @include media-breakpoint-down(sm) {
+      height: 670px;
+    }
+    video {
+      height: auto!important;
+    }
+  }
+
+  &.main:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #18181E;
+    opacity: 0.4;
+  }
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100%; // landing real-time 때문에 auto에서 변경
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%)translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+
+    @include media-breakpoint-up(fhd) {
+      height: auto;
+    }
+
+    @include media-breakpoint-down(sm) {
+      height: 100%;
+    }
+  }
+}

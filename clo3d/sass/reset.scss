@@ -1,0 +1,208 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  width:100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  text-align:left;
+  color: #232328;
+  font-size: 11px;
+  font-family: $font-avenir;
+  font-weight: 300;
+  background: transparent; /* default */
+  word-break: break-word;
+  word-break: keep-all;
+  word-wrap:break-word;
+  -webkit-text-size-adjust:none; /* Fix for webkit  */
+  -ms-text-size-adjust: none; /* Fix for ms */
+  -webkit-tap-highlight-color:rgba(0,0,0,0); /* mobile - high light  clear */
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.ko {
+  font-family: $font-notokr;
+}
+body.zh {
+  font-family: $font-zhsimple;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, fieldset, p, button, td, th {
+  margin:0;
+  padding:0
+}
+img, fieldset, iframe {
+  border:0 none
+}
+li {
+  list-style:none
+}
+input, select, button {
+  vertical-align:middle
+}
+select {
+  border: 0;
+  background: none;
+}
+
+img {
+  vertical-align:top;
+  image-rendering: auto;
+}
+i, em, address {
+  font-style:normal
+}
+label, button {
+  cursor:pointer
+}
+button {
+  margin:0;
+  padding:0
+}
+a {
+  color:#64686f;
+  text-decoration:none
+}
+a:hover {
+  text-decoration:none
+}
+button * {
+  position:relative
+}
+button img {
+  left:-3px;
+  *left:auto
+}
+
+option {
+  padding-right:6px
+}
+hr {
+  display:none
+}
+legend {
+  *width:0
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0
+}
+
+legend, caption {
+  visibility: hidden;
+}
+
+form {position: relative;}
+
+caption, legend {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+}
+
+/* Forms.css */
+fieldset, legend {
+  margin:0;
+  padding:0;
+  border:0 none;
+}
+
+/* For Screen Reader */
+legend {
+  position:absolute;
+  left:0;
+  top:0;
+  visibility:hidden;
+  overflow:hidden;
+  width:0;
+  height:0;
+  font-size:0;
+  line-height:0;
+}
+
+
+input::-ms-clear {
+  display:none
+}
+input, button {
+  border:none;
+  outline: none;
+  padding: 0;
+}
+
+input[type="text"], input[type="email"], input[type="search"], input[type="password"] {
+  /*-webkit-appearance: none;
+  -moz-appearance: none; /* mobile firefox too!
+  appearance: none;*/
+}
+
+/** Correct `inline-block` display not defined in IE 8/9. */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* clear  */
+.clearfix {
+  display: block;
+  clear: both;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    clear: both;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  padding: 0 !important;
+}
+
+.row {
+  -js-display: flex;
+  display:-webkit-box;
+  display: -webkit-flex;
+  display:-moz-box;
+  display:-ms-flexbox;
+}

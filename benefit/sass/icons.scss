@@ -1,0 +1,157 @@
+
+.bi {
+  display: inline-block;
+  width: 160px;
+  height: 12px;
+  background: url('~static/images/common/img-bi.svg') no-repeat;
+  background-size: 100%;
+  &.black {
+    background-position: 0 100%;
+  }
+}
+
+.icon-sns {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url('~static/images/common/icon-sns.svg') no-repeat;
+  background-size: 400%;
+  &.facebook {
+    background-position: 0 0;
+  }
+  &.twitter {
+    background-position: 33.3% 0;
+  }
+  &.insta {
+    background-position: 66.6% 0;
+  }
+  &.youtube {
+    background-position: 100% 0;
+  }
+  &.white {
+    background-position-y: 100%;
+  }
+  &:hover {
+    background-position-y: 50%;
+  }
+  &.small {
+    width: 12px;
+    height: 12px;
+  }
+  &.large {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.icon-faq {
+  display: inline-block;
+  width: 40px;
+  height: 50px;
+  background: url('~static/images/common/ui-faq.svg') no-repeat;
+  background-size: 200%;
+  &.down {
+    background-position: 0 0;
+  }
+  &.up {
+    background-position: 100% 0;
+  }
+}
+
+.icon-arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('~static/images/common/ui-dropdown.svg') no-repeat 0 -1px;
+  background-size: 300%;
+  &.white {
+    background-position: 100% 0;
+  }
+  &:hover {
+    background-position: 50% 0;
+  }
+}
+
+.icon-updown {
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+  background: url('~static/images/common/icon-updown.svg') no-repeat;
+  background-size: 200%;
+  @include media-breakpoint-down(lg) {
+    width: 20px;
+    height: 12px;
+  }
+  &.up {
+    background-position: 0 0;
+  }
+  &.down {
+    background-position: 100% 0;
+  }
+}
+
+.icon-try {
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  background: url('~static/images/store/icon-fittng.svg') no-repeat;
+  background-size: 200%;
+  @include media-breakpoint-down(lg) {
+    width: 15px;
+    height: 18px;
+  }
+  &.black {
+    background-position: 0 0;
+  }
+  &.white {
+    background-position: 100% 0;
+  }
+}
+.icon-input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('~static/images/common/icon-input.svg') no-repeat;
+  background-size: 300%;
+
+  &.btn-close {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+  &.close-red {
+    background-position: 0 0;
+  }
+  &.check {
+    background-position: 50% 0;
+  }
+  &.close-grey {
+    background-position: 100% 0;
+  }
+}
+
+.icon-click {
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  background: url('~static/images/common/icon-click.svg') no-repeat;
+  background-size: 100%;
+  @include media-breakpoint-down(xs) {
+    width: 16px;
+    height: 24px;
+  }
+}
+
+.icon-tryiton {
+  display: inline-block;
+  width: 85px;
+  height: 90px;
+  background: url('~static/images/benefit/fitting/btn-tryiton.svg') no-repeat;
+  background-size: 200%;
+  &.black {
+    background-position: 0;
+  }
+  &.red {
+    background-position: 100% 0;
+  }
+}

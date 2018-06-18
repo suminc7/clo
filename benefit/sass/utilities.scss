@@ -1,0 +1,219 @@
+/* align */
+.fl {float: left;}
+.fr {float: right;}
+
+/* text - hidden */
+.blind {font-size:0}
+
+/* text - align */
+.txt_fl {text-align: left}
+.txt_fr {text-align: right}
+
+/* round */
+.radius {
+  @include border-radius(100px);
+}
+
+/* box-sizing */
+.box-sizing {
+  @include box-sizing;
+}
+
+/* text 말줄임 */
+.text_overflow {
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+}
+
+/* 문장 자동 줄바꿈 */
+.break_word {
+  word-break: break-word;
+  word-break: keep-all;
+  word-wrap:break-word;
+}
+
+/* grid */
+.ml40 {margin-left: 40px}
+.mr40 {margin-right: 40px}
+
+h1.tit {
+  display: inline-block;
+  margin: 0 0 40px 0;
+  color: $black;
+  font-size: 50px;
+  font-family: $fontLight;
+  line-height: 100%;
+  letter-spacing: 9.5px;
+  word-break: break-word;
+
+  span {
+    color:$darkGrey;
+
+    &:first-child {
+      color:$lightGrey;
+    }
+
+    &.point {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: url(/static/images/icon_point.png) no-repeat 0 0;
+      background-image: url(/static/images/icon_point.svg),none;
+      background-size: 12px 12px;
+    }
+
+    &.pointWhite {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: url(/static/images/icon_point_white.png) no-repeat 0 0;
+      background-image: url(/static/images/icon_point_white.svg),none;
+      background-size: 12px 12px;
+    }
+  }
+}
+
+p.txtBenefit {
+  font-size: 18px;
+  color: $txtGrey;
+  font-family: $fontBook;
+  line-height: 100%;
+}
+
+.stripe {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  background: url(/static/images/img_stripe_new.png) no-repeat;
+  vertical-align: middle;
+}
+
+.icon_facebook {
+  width: 14px;
+  height: 12px;
+  background-position: 0 0;
+}
+
+.icon_instagram {
+  width: 14px;
+  height: 12px;
+  background-position: 0 -17px;
+}
+
+.icon_twitter {
+  width: 14px;
+  height: 12px;
+  background-position: 0 -33px;
+}
+
+.icon_pinterest {
+  width: 14px;
+  height: 12px;
+  background-position: 0 -49px;
+}
+
+.icon_youtube {
+  width: 14px;
+  height: 12px;
+  background-position: 0 -65px;
+}
+
+@keyframes move {
+  from {transform: translateX(0%);}
+  to {transform: translateX(-100%);}
+}
+
+@media all and (min-width: 768px) and (max-width: 4000px) {
+  .minHeightFixed {
+    #section0,
+    #section1,
+    #section2,
+    #section3,
+    #section4,
+    #section5,
+    #section6 {
+      height: 1080px!important;
+
+      .fp-controlArrow {
+        display: block;
+        position: absolute;
+        top: 55%;
+        width: 25px;
+        height: 70px;
+        z-index: 1;
+        cursor: pointer;
+      }
+
+      .fp-controlArrow.fp-prev {
+        left: 25px;
+      }
+      .fp-controlArrow.fp-next {
+        right: 25px;
+      }
+    }
+
+    #section4 {
+      .fp-controlArrow {
+        top: 55%;
+      }
+
+      .fp-controlArrow.fp-prev {
+        left: 3%;
+      }
+      .fp-controlArrow.fp-next {
+        right: 3%;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  /*#section0,
+  #section1,
+  #section2,
+  #section3,
+  #section4 {
+    min-height: 568px !important;
+
+    .fp-tableCell {
+      min-height: 568px !important;
+    }
+  }*/
+
+  header #dialog.mobile {
+    width: 20px;
+    height: 13px !important;
+    padding: 0 !important;
+  }
+
+  h1.tit {
+    font-size: 21px !important;
+    background-position: 100% 75%;
+    background-size: 9px 9px;
+
+    span.point {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background: url(/static/images/icon_point.png) no-repeat 0 0;
+      background-image: url(/static/images/icon_point.svg),none;
+      background-size: 7px 7px;
+    }
+
+    span.pointWhite {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background: url(/static/images/icon_point_white.png) no-repeat 0 0;
+      background-image: url(/static/images/icon_point_white.svg),none;
+      background-size: 7px 7px;
+    }
+  }
+  .fp-controlArrow {
+    width: 10px !important;
+    height: 22px !important;
+  }
+}

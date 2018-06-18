@@ -1,0 +1,373 @@
+/*******************
+  Account
+*******************/
+.account-area {
+  padding: 160px 0;
+
+  .account-box {
+    width: 460px;
+    margin:0 auto;
+    padding: 60px 80px 70px;
+    background: $color-white;
+    text-align: center;
+    border-radius: 3px;
+
+    h2.account-stit {
+      padding: 21px 0 31px 0;
+      text-align: center;
+    }
+
+    h2.account-stit-signup {
+      padding: 22px 0 20px 0;
+      text-align: center;
+    }
+
+    .account-ico-box {
+      padding: 41px 0;
+    }
+
+    .txt-confirmation-email {
+      //font-family: $font-lato;
+      text-align: center;
+    }
+
+    .account-txt-spot {
+      padding: 20px 0;
+    }
+
+    .login-path-link{
+      color: $color-blue;
+    }
+
+    .control-form-box {
+      .login-form-input-box {
+        margin-bottom: 12px;
+
+        .tooltip-box {
+          float: right;
+        }
+      }
+
+      .login-form-checkbox {
+        margin-bottom: 40px;
+        padding-top: 10px;
+
+        span {
+          font-family: $font-lato;
+        }
+      }
+
+      .login-forgot-link {
+        margin-top: 21px
+      }
+    }
+
+  }
+
+  .login-pop-box {
+    padding: 60px 100px 70px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .account-area {
+    padding: 100px 0 180px 0;
+
+    .account-box {
+      width: 300px;
+      height: 100%;
+      padding: 50px 60px 60px;
+      border-radius: 3px;
+
+      h2.account-stit {
+        padding: 10px 0 21px 0;
+      }
+
+      h2.account-stit-signup {
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .account-ico-box {
+        padding: 40px 0;
+      }
+
+      .txt-confirmation-email {
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      .account-txt-spot {
+        padding: 20px 0;
+      }
+
+      .account-txt-login-spot {
+        padding: 10px 0 20px 0;
+      }
+
+      .control-form-box {
+        .login-form-input-box {
+          margin-bottom: 7px;
+        }
+
+        .login-form-checkbox {
+          margin-bottom: 21px;
+          padding-top: 5px;
+        }
+
+        .login-btn-sign-area {
+          text-align: center;
+
+          .btn-normal {
+            display: inline-block;
+            width: 100px;
+            line-height: 30px;
+          }
+        }
+
+        .login-forgot-link {
+          margin-top: 12px;
+        }
+      }
+    }
+
+    .login-pop-box {
+      padding: 50px 60px 60px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .account-area {
+    padding: 90px 0 90px 0;
+
+    .account-box {
+      width: 94%;
+      height: 100%;
+      padding: 40px 60px 50px;
+
+      .account-txt-login-spot {
+        padding: 10px 0;
+      }
+
+      .control-form-box {
+        width: 180px;
+        margin: 0 auto;
+
+        .login-form-input-box {
+          margin-bottom: 7px;
+        }
+
+        .login-form-checkbox {
+          margin-bottom: 20px;
+          padding-top: 5px;
+        }
+
+        .login-btn-sign-area {
+          .btn-normal {
+            width: 100px;
+            letter-spacing: 0;
+          }
+        }
+
+        .login-forgot-link {
+          margin-top: 10px
+        }
+      }
+    }
+
+    .login-pop-box {
+      padding: 30px 60px 40px;
+    }
+  }
+}
+
+
+// 회원가입
+.join {
+  .selectize-control {
+    text-align: left;
+    color: #363636;
+
+    .item,
+    input {
+      font-size: 13px;
+    }
+  }
+
+  .login-form-input-box {
+    &.input-validation-successbar {
+      .selectize-input {
+        border-bottom: 2px solid #7BAEE8 !important;
+      }
+    }
+
+    &.is-danger {
+      .selectize-input {
+        border-bottom: 2px solid #F25454 !important;
+      }
+    }
+  }
+
+
+
+  footer .ft-area {
+    border: 0 none;
+  }
+
+  .account-area .account-box {
+    width: 460px;
+    padding: 50px 0 70px;
+
+    h2.account-stit-signup {
+      a {
+        color: $color-blue;
+      }
+    }
+
+    .txt-student {
+      display: inline-block;
+      margin-top: 2px;
+    }
+
+    .control-form-box {
+      width: 260px;
+      margin:0 auto;
+
+      .login-form-input-box {
+        margin-bottom: 10px;
+      }
+    }
+
+    .signup-agree {
+      display: inline-block;
+      padding: 40px 0 0 0
+    }
+
+    .tooltip-box {
+      margin-top: 5px;
+    }
+
+    .login-btn-sign-area {
+      width: 200px;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+  }
+  .help {
+    margin: 5px 0 0 0;
+  }
+  .help.is-info {
+    text-align: left;
+    background: url(~static/images/common/available.svg) no-repeat 0 3px;
+    padding-left: 17px;
+    background-size: 12.6px 10.8px;
+    height: 15px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .join {
+    .account-area {
+      padding: 60px 0 120px;
+
+      .account-sign-box {
+        width: 300px;
+        padding: 50px 0 60px;
+
+        > h2.account-stit-signup {
+          padding: 10px 0 21px 0;
+        }
+
+        .control-form-box {
+          width: 180px;
+          margin: 0 auto;
+
+          input[type="text"].form_input,
+          input[type="password"].form_input {
+            width: 100%;
+            margin: 0 auto;
+          }
+
+          .tooltip-box {
+            .txt-student {
+              font-size: 9px;
+            }
+
+            .ico-question {
+              > img {
+                width: 14px;
+                height: 14px;
+              }
+            }
+          }
+
+          .login-form-checkbox {
+            padding-top: 23px;
+          }
+        }
+
+        .signup-agree {
+          padding: 20px 60px 0
+        }
+
+        .login-btn-sign-area {
+          width: 150px;
+          padding-top: 24px;
+
+          button {
+            font-size: 9px;
+            height: 30px;
+            line-height: 30px;
+            latter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .join {
+    .account-area {
+      padding: 10px 0 20px 0;
+
+      .signup-agree {
+        padding: 20px 60px 0
+      }
+
+      .account-sign-box {
+
+        .ignup-agree {
+          padding: 0 60px;
+        }
+
+        .login-btn-sign-area {
+          padding-top: 20px;
+
+          button {
+            font-size: 9px;
+            height: 30px;
+            line-height: 30px;
+            latter-spacing: 1px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+body.ko,
+body.zh {
+  .join {
+    .account-area {
+      .account-box {
+        .txt-student {
+          display: inline-block;
+          margin-top: 1px;
+        }
+      }
+    }
+  }
+}

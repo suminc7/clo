@@ -1,0 +1,30 @@
+@import "vars";
+
+.section-item {
+  padding: 100px 0 120px 0;
+  text-align: center;
+  &.pad-bottom-0 {
+    padding-bottom: 0!important;
+  }
+  &.grey {
+    background-color: $dark-grey-three;
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 50px 0 70px 0;
+  }
+}
+
+
+.sub-visual {
+  background: url("~static/images/advantages/img-visual-advantages.jpg") no-repeat center;
+  background-size: cover;
+
+  .sub-title {
+    padding: 220px 0;
+    display: block;
+    text-align: center;
+    @include media-breakpoint-down(xs) {
+      padding: 309px 0;
+    }
+  }
+}

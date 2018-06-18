@@ -1,0 +1,33 @@
+$coral: #f56450;
+$charcoal-grey: #373741;
+$charcoal-grey-two: #3c3c46;
+$charcoal-grey-three: #323234;
+$slate-grey: #646466;
+$cool-grey: #a8a8aa;
+$dark-grey: #19191a;
+$dark-grey-two: #202021;
+$dark-grey-three: #141416;
+$dark-grey-four: #232328;
+$faded-orange: #f1705e;
+$scarlet: #c50018;
+
+$grid-gutter-width: 20px !global;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        hd: 1500px,
+        fhd: 1920px
+) !global;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        hd: 1440px,
+        fhd: 1880px
+) !global;

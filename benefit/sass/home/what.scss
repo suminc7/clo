@@ -1,0 +1,171 @@
+#section1 {
+  width: 100%;
+
+  .whatArea {
+    height: 100%;
+
+    p.txtBenefit {
+      padding-bottom: 50px;
+      line-height: 1.5em;
+    }
+
+    .whatBox {
+      width: 100%;
+    }
+
+    .sideTxtBox {
+      margin: 0 auto;
+
+      ul.whatLocation {
+        overflow: hidden;
+        width: 130px;
+        margin: 30px auto 0;
+        text-align:center;
+
+        li {
+          float: left;
+          width: 16px;
+          height: 16px;
+          margin-left: 20px;
+          background:#eee;
+          @include border-radius(50px);
+
+          &:first-child {
+            margin: 0;
+          }
+
+          &.active {
+            background:$lightRed;
+          }
+        }
+      }
+
+      .what_visual {
+        background: url(/static/images/main_what_bg.png) no-repeat center 0%;
+        background-size: inherit;
+      }
+
+      .whatTxtSpotColumn, .whatTxtSpot {
+        width: 100%;
+        margin-top: 30px;
+        font-size: 20px;
+        color: $black;
+        font-family: $fontRoman;
+      }
+
+      .mobile {
+        display: none !important
+      }
+    }
+
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 1199px) {
+  #section1 {
+    .whatBox {
+      p.txtBenefit {
+        line-height: 1.5em;
+      }
+    }
+    .what_visual {
+      background: none !important;
+    }
+
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #section1 .whatArea .whatBox {
+    width: 100%;
+  }
+  #section1 .whatArea .sideTxtBox {
+    width: 85%;
+    background: none!important;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #section1 {
+    .fp-tableCell {
+      background:#fff;
+    }
+
+    .fp-controlArrow{
+      top: 52% !important;
+    }
+
+    .whatArea {
+
+      .sideTxtBox {
+        img {
+          height: auto !important;
+        }
+
+        .what_visual {
+          width: 50%;
+          margin:0 auto !important;
+          height: auto !important;
+        }
+      }
+
+      .fp-controlArrow {
+        top: 50%;
+      }
+
+      .fp-controlArrow.fp-prev {
+        left: 20px;
+      }
+      .fp-controlArrow.fp-next {
+        right: 20px;
+      }
+
+      .whatBox {
+        h1.tit {
+          margin-bottom: 25px !important;
+          padding: 0 10%;
+          line-height: 1.3em;
+          background-position: 75% 83% !important;
+        }
+
+      }
+
+      p.txtBenefit {
+        font-size: 11px !important;
+        line-height: 1.5em;
+      }
+
+      .whatTxtSpotColumn, .whatTxtSpot {
+        width: 100%;
+        font-size: 12px !important;
+      }
+
+      ul.whatLocation {
+        width: 70px !important;
+
+        li {
+          width: 7px !important;
+          height: 7px !important;
+          margin-left: 7px !important;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  #section1 {
+    .what_visual {
+      width: 70% !important;
+    }
+    }
+  }
+
+@media all and (max-height: 659px) {
+  #section1 {
+    .what_visual {
+      height: 560px !important;
+    }
+  }
+}
+

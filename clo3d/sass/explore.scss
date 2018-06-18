@@ -1,0 +1,74 @@
+.explore {
+  .copyright {
+    color: #232323;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 20px;
+    font-size: 9px;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+    font-family: $font-lato;
+    &.white {
+      color: white;
+    }
+    @include media-breakpoint-up(md) {
+      width: auto;
+      font-size: 11px;
+      line-height: 1.36;
+      letter-spacing: 0.3px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 13px;
+      line-height: 1.38;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  .sub-header {
+    height: 568px;
+    background:url('~static/images/sub/bg_sub_explore.jpg') no-repeat center;
+
+    @include media-breakpoint-up(md) {
+      .explore-tit-box {
+        padding-top: 190px;
+
+        .explore-txt-spot {
+          padding-top: 15px;
+        }
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      .explore-tit-box {
+        padding-top: 170px;
+      }
+    }
+  }
+
+  .section {
+    text-align: center;
+    .title {
+      text-align: center;
+      margin-bottom: 10px;
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 20px;
+      }
+    }
+    .desc {
+      text-align: center;
+      margin-bottom: 30px;
+      @include media-breakpoint-up(xxl) {
+        margin-bottom: 40px;
+      }
+    }
+    .video-item {
+      margin: 0 auto;
+      background-color: #f1f1f1;
+    }
+  }
+
+  .easy-to-use {
+    background-color: #EDE9E7;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["vue"],
+  "plugins": ["vue", "html"],
+  "parserOptions": {
+    "ecmaVersion": 8 // or 2017
+  },
+  "rules": {
+    "indent": ["warn", 4],
+    "space-before-function-paren": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
+    "no-undef": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-unused-vars": ["warn"]
+  },
+  "globals": {
+    "FB": true,
+    "gapi": true,
+    "TweenLite": true,
+    "window": true,
+    "$": true,
+    "Benefitv2": true,
+    "localStorage": true,
+    "_common_": true,
+    "noUiSlider": true,
+    "Power1": true,
+    "Power2": true
+  }
+}

@@ -1,0 +1,131 @@
+#section0 {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .fp-tableCell {
+      vertical-align: top;
+    }
+
+  h1.tit {
+    .no-svg .logo {
+      width: 12px;
+      height: 12px;
+      background: url(/static/images/icon_point.png) no-repeat 100% 78%;
+    }
+  }
+
+    #aboutSlider {
+      float: right;
+      height: 85%;
+      margin: 70px 135px 0 0;
+      opacity:1;
+      transition: opacity 1s;
+    }
+
+    #sizeList {
+      position: absolute;
+      right: 5%;
+      top: 40%;
+
+      li {
+        font-size: 16px;
+        color: $black;
+        padding: 15px 0;
+        text-align: center;
+        @include transition(all 0.3s);
+
+        &.active {
+          color: #ff7366;
+          -moz-transform: scale(1.8);
+          -webkit-transform: scale(1.8);
+          -o-transform: scale(1.8);
+          -ms-transform: scale(1.8);
+          transform: scale(1.8);
+
+        }
+
+    }
+
+    .aboutSpot {
+      display: inline-block;
+      position: absolute;
+      top: 44%;
+      left: 0;
+      text-align: left;
+    }
+  }
+
+    .aboutSpot {
+      position: absolute;
+      top: 50%;
+      left: 6%;
+      text-align: left;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1080px) {
+  #aboutSlider {
+    height: 80% !important;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #section0 {
+
+    #aboutSlider {
+      float: none;
+      height: 75%;
+      margin: 0 auto !important;
+    }
+
+    #sizeList {
+      right: 50px !important;
+      top: 30% !important;
+    }
+
+    .aboutSpot {
+      top: 82%;
+      left: 6% !important;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  #section0 {
+    #aboutSlider {
+      float: none;
+      height: 75%;
+      margin: 0 auto !important;
+    }
+
+    #sizeList {
+        right:30px !important;
+        top: 25% !important;
+
+        li {
+          font-size: 14px;
+        }
+      }
+
+    .aboutSpot {
+      position:static !important;
+      padding: 30px;
+
+      p.txtBenefit {
+          font-size: 12px;
+          font-family: $fontBook;
+          line-height: 1.5em;
+        }
+      }
+
+  }
+}
+
+@media all and (max-width: 321px) {
+  #section0 {
+    #aboutSlider {
+      height: 64% !important;
+      margin: 0 auto !important;
+    }
+  }
+}

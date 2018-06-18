@@ -1,0 +1,362 @@
+#app { // mypage account 클래스와 우선순위 충돌
+
+  .admin {
+    .sub-area {
+      text-align: left;
+    }
+    .head .profileAdmin {
+      line-height: 50px;
+      font-weight: 300;
+    }
+
+    background-image: url('~static/images/common/loading_btn.svg');
+    background-position: 1000% 0;
+  }
+
+  .adminAccount {
+    background: #000;
+
+    .account-box {
+      width: 460px;
+      margin: 0 auto;
+      padding: 60px 100px;
+
+      .pageTitle {
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      .form_input {
+        width: 100% !important;
+      }
+
+      .login-btn-sign-area {
+        width: 150px;
+      }
+
+    }
+
+    &.setPasswordExist {
+      .account-box {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+
+      .contents-text {
+        margin-bottom: 20px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.adminContents {
+  padding-top: 70px;
+}
+.adminSetting {
+  .selectize-input.input-active {
+    background: none !important;
+  }
+
+  .slider:hover {
+      .slider-label:before {
+        background: #82bbfd;
+      }
+
+      .slider-input:checked ~ .slider-label:before {
+        background: #525760;
+      }
+  }
+}
+.adminSetting-section {
+  margin-bottom: 60px;
+
+  &.editMode {
+    .adminSetting-sectionContent {
+      background: #f8f8f8;
+    }
+  }
+
+  &.ip {
+    background-position: center 110%;
+  }
+}
+.adminSetting-sectionTitle {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #828791;
+
+  &.borderNone {
+    border: none;
+  }
+}
+.adminSetting-sectionContent {
+  padding: 30px 0;
+
+  div.selectize-input {
+    background: none;
+  }
+
+  .form_input {
+    background: none !important;
+  }
+}
+.adminSetting-subSection {
+  padding: 10px 20px 10px 20px;
+}
+.adminSetting-subSectionTitle {
+  padding-bottom: 5px;
+  border-bottom: 1px solid $color-gray-02;
+}
+.adminSetting-subSectionContents {
+  padding: 30px 25px;
+}
+.adminSetting-subSection-repeat {
+  .login-form-checkbox {
+    border-right: 1px solid $color-gray-02;
+
+    &:last-child {
+      padding-left: 50px;
+      border-right: none;
+    }
+  }
+}
+.adminSetting-time {
+  margin-top: 30px;
+
+  td {
+    padding: 5px 10px;
+  }
+
+  span {
+    line-height: 48px;
+  }
+
+  .selectize-control {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+.adminSetting-timeSelect {
+  width: 230px;
+}
+.adminSetting-timeTitle {
+  width: 50px;
+  padding-left: 0;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.adminSetting-timeZone {
+  font-size: 13px;
+}
+.adminSetting-sectionContent.ipPermision {
+  border-top: 1px solid $color-gray-02;
+}
+.adminSetting-ipPermission-ipRange {
+  padding-left: 50px;
+  border-left: 1px solid $color-gray-02;
+}
+
+
+.adminLogData-tableWrapper {
+  min-height: 150px;
+}
+.adminLogData-maxItem {
+  width: 100px;
+
+  .selectize-input {
+    height: 34px !important;
+    line-height: 34px !important;
+    border: none !important;
+    font-weight: 500;
+  }
+}
+.adminLogData-totalCount {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.adminLogData-graph {
+  min-height: 400px;
+}
+
+
+.dataFilter {
+  position: relative;
+  padding-right: 14px;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    border-color: #333333 transparent transparent transparent;
+  }
+
+  &.desc:after {
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent #333333 transparent ;
+  }
+}
+
+.tbl-mypage-subscription {
+  td {
+    padding: 0 10px;
+    word-break: break-all;
+  }
+
+  .caution {
+    margin-left: 20px;
+    font-size: 11px;
+  }
+}
+.tbl-mypage-subscription.ip {
+  td {
+    font-size: 17px;
+  }
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.excelDonwloadBtn {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 9px !important;
+  line-height: 30px;
+}
+
+.paginationWrapper {
+  position: relative;
+  min-height: 60px;
+
+  .button {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+}
+
+.table {
+  width: 100%;
+
+  th {
+    font-weight: 400;
+  }
+  th,
+  td {
+    vertical-align: middle;
+  }
+
+  &.inputGroup {
+    td {
+      padding: 5px;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+    .form_input {
+      width: 100%;
+    }
+  }
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.addBig {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+  background: url('~static/images/common/icon-admin-edit.svg') no-repeat -50px center;
+  
+  &:hover {
+    background-position: right center;
+  }
+}
+
+.buttonWrapper {
+  text-align: center;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+.ml50 {
+  margin-left: 50px;
+}
+
+
+.slider {
+  position: relative;
+  width: 56px;
+  height: 26px;
+  display: inline-block;
+  box-sizing: content-box;
+}
+.slider-label {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 24px;
+  background: #e5e6eb;
+  border: 1px solid #d7d8d9;
+  border-radius: 100px;
+  padding-left: 30px;
+  line-height: 24px;
+  box-sizing: border-box;
+  font-size: 10px;
+
+  .off {
+    display: inline-block;
+  }
+  .on {
+    display: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -2px;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    background: #525760;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+.slider-input {
+  position: absolute;
+  left: 100%;
+  visibility: hidden;
+
+  &:checked + .slider-label {
+    padding-left: 6px;
+
+    .on {
+      display: inline-block;
+    }
+    .off {
+      display: none;
+    }
+
+    &:before {
+      //right: 0;
+      left: 30px;
+      background: #82bbfd;
+    }
+  }
+}
+

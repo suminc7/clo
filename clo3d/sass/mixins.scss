@@ -1,0 +1,10 @@
+@mixin font-style($size, $letterspacing) {
+  font-size: $size;
+  letter-spacing: $letterspacing;
+}
+
+
+//flex 대신 float 사용
+%grid-column {
+  float: left;
+}

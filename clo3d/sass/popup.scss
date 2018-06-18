@@ -1,0 +1,306 @@
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height:100%;
+  height:100vh; // viewport height
+  width:100%;
+  //display: table;
+  background-color: rgba(0,0,0,0.25);
+  z-index: 10000;
+
+  input.form_input {
+    width: 100%;
+  }
+}
+
+
+
+.popup-inner {
+  //display: table-cell;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: auto;
+  -ms-overflow-style: none;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.popup-inner::-webkit-scrollbar {
+  display: none;
+}
+.popup-contents::-webkit-scrollbar {
+  display: none;
+}
+
+.popup-contents {
+  width: 460px;
+  position: relative;
+  display: inline-block;
+  padding: 70px 60px;
+  max-height: 100%;
+  margin: 0 auto;
+  overflow: auto;
+  -ms-overflow-style: none;
+  background: #ffffff;
+  border-radius: 3px;
+  text-align: left;
+  vertical-align: middle;
+
+  &.trialPopup {
+    width: 460px;
+    padding: 70px 10px 75px 10px;
+    text-align: center;
+
+    h2 {
+      padding-bottom: 10px;
+    }
+
+    .btn-normal {
+      margin: 40px 0;
+    }
+  }
+
+  .btn-mypage-pop-close,
+  .btn-close-tooltip,
+  .btn-mypage-pop-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  &.vieLargeImage {
+    width: auto;
+    padding: 20px;
+    max-width: 90%;
+    max-height: 90%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .btn-mypage-pop-close {
+      top: 8px;
+      right: 8px;
+    }
+  }
+
+  .tooltipWrapper {
+    position: relative;
+
+    .tooltip-contents {
+      visibility: hidden; // display:none은 height 못구한다.
+      position: absolute;
+      margin-right: 20px;
+      top: 50%;
+      right: 100%;
+    }
+
+    &:hover {
+      .tooltip-contents {
+        visibility: visible;
+      }
+    }
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity .5s
+  }
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0
+  }
+
+  .mypage-change-name {
+    width: 460px;
+    padding: 60px 100px 70px;
+
+    .mypage-change-name-inner {
+      h2 {
+        padding-bottom: 22px;
+        text-align: center;
+      }
+
+      .pop-change-con-box {
+        width: 100%;
+        padding-top: 20px;
+
+        h3 {
+          width: 100%;
+        }
+
+        p.txt-change-spot {
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+
+      .pop-change-btn-area {
+        width: 100%;
+        padding-top: 42px;
+        text-align: center;
+        clear: both;
+
+        button {
+          display: inline-block;
+          width: 120px;
+
+          &:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  // tooltip
+  .tooltip-contents {
+    position: relative;
+    width: 260px !important;
+    padding: 15px 40px 20px 20px;
+    background: #828791;
+    border-radius: 5px;
+    color: #fff;
+    z-index: 1;
+
+    p.tit-tooltip {
+      margin: 0 0 10px 0;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 20px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    p.txt-tooltip-spot {
+      text-align: left;
+
+      a {
+        color: $color-blue;
+      }
+    }
+
+    .btn-close-tooltip {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .tooltip-contents {
+      width: 180px;
+      padding: 20px;
+
+      p.tit-tooltip {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  // tooltip end
+
+  body.ko,
+  body.zh {
+    .mypage-change-name {
+      width: 460px;
+      padding: 60px 100px 70px;
+      text-align: center;
+      text-align: left;
+
+      .mypage-change-name-inner {
+        h2 {
+          padding-bottom: 22px;
+          text-align: center;
+        }
+
+        .pop-change-con-box {
+          width: 100%;
+          padding-top: 20px;
+
+          h3 {
+            width: 100%;
+          }
+
+          p.txt-change-spot {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+          }
+        }
+
+        .pop-change-btn-area {
+          width: 100%;
+          padding-top: 42px;
+          text-align: center;
+          clear: both;
+
+          button {
+            display: inline-block;
+            width: 120px;
+
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      .btn-mypage-pop-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .popup-contents {
+      margin: 0 auto;
+
+      &.mid {
+        position: relative;
+        width: 180px;
+
+        .btn-close-tooltip {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .popup-contents {
+      margin: 0 auto;
+
+      &.mid {
+        position: relative;
+        width: 180px;
+
+        .btn-close-tooltip {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,535 @@
+/*******************
+  Mypage
+*******************/
+
+.mypage {
+  .sub-header {
+    height: 200px;
+    background:url('~static/images/sub/bg_sub_mypage.jpg') no-repeat center 0;
+  }
+
+  .sub-area {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 10px 100px;
+  }
+
+  .none {
+    border: none;
+    background: none;
+    box-shadow: none
+  }
+
+  .mypage-profile-box {
+    text-align: center;
+
+    a {
+      display: inline-block;
+      height: 100px;
+    }
+
+    .profileImage {
+      display: inline-block;
+      overflow: hidden;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      margin: 0;
+      color: #ffffff;
+      font-size: 45px;
+      border-radius: 50%;
+      text-align: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    P.mypage-profile-name {
+      padding-top: 15px;
+    }
+  }
+
+  .mypage-tab-box {
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+
+    ul.mypage-tab-list {
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 30px 0 20px;
+      text-align: center;
+
+      li {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        margin-left: 17px;
+        text-align: center;
+
+        &:first-child {
+          margin: 0;
+        }
+
+        .position-icon {
+          top: 20px;
+          right: 20px;
+        }
+
+        &.mypage-tab-dashboard {
+          background: #eaf1f6;
+
+          &.active {
+            color: #626166;
+            border-right: solid 5px #4E5155;
+            border-bottom: none;
+            box-shadow: 5px 5px 0 0 #4E5155 inset;
+            background: #fff;
+
+            .position-icon {
+              top: 20px;
+              right: 15px;
+            }
+          }
+        }
+
+        &.mypage-tab-account {
+          background: #f2eeea;
+
+          &.active {
+            color: #626166;
+            border-right: solid 5px #4E5155;
+            border-bottom: none;
+            box-shadow: 5px 5px 0 0 #4E5155 inset;
+            background: #fff;
+
+            .position-icon {
+              top: 20px;
+              right: 15px;
+            }
+          }
+
+        }
+
+        &.mypage-tab-license {
+          background: #e5e6eb;
+
+          &.active {
+            color: #626166;
+            border-right: solid 5px #4E5155;
+            border-bottom: none;
+            box-shadow: 5px 5px 0 0 #4E5155 inset;
+            background: #fff;
+
+            .position-icon {
+              top: 20px;
+              right: 15px;
+            }
+          }
+        }
+
+        &.mypage-tab-order {
+          background: #ececec;
+
+          &.active {
+            color: #626166;
+            border-right: solid 5px #4E5155;
+            border-bottom: none;
+            box-shadow: 5px 5px 0 0 #4E5155 inset;
+            background: #fff;
+
+            .position-icon {
+              top: 20px;
+              right: 15px;
+            }
+          }
+        }
+
+        &.mypage-tab-myitem {
+          background: #f7eced;
+
+          &.active {
+            color: #626166;
+            border-right: solid 5px #4E5155;
+            border-bottom: none;
+            box-shadow: 5px 5px 0 0 #4E5155 inset;
+            background: #fff;
+
+            .position-icon {
+              top: 20px;
+              right: 15px;
+            }
+          }
+        }
+        
+        &.mypage-tab-admin {
+          background: #ecf4ee;
+        }
+
+        &.list-empty {
+          width: 20px;
+          height: 100%;
+          background: #fff;
+        }
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 70px 0 0 20px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .mypage-dashboard-box {
+    overflow: hidden;
+    padding-top: 80px;
+
+    .mypage-dashboard-box-con {
+      position: relative;
+      width: 460px;
+      margin-bottom: 80px;
+
+      &.accout-delete-margin {
+        margin-bottom: 116px;
+      }
+
+      > h1 {
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #828791;
+        text-align: left;
+
+        &.tit-none {
+          height: 40px;
+          margin-bottom: 40px;
+        }
+
+        span:first-child {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+
+          &.icon-mypage {
+            background-size: cover;
+          }
+        }
+
+        span.mypage-dashboard-box-stit {
+          display: inline-block;
+          text-indent: 35px;
+        }
+      }
+
+      .more {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        font-weight: normal;
+      }
+
+      .btn-market {
+        width: 460px;
+        margin-top: 30px;
+        font-weight: normal;
+
+        .icon-market {
+          margin: -4px 9px 0 0;
+        }
+
+        &:hover {
+          .icon-market-closet{
+            background-position: 100% 0;
+          }
+        }
+      }
+
+      .btn-closet {
+        width: 300px;
+        font-weight: normal;
+      }
+
+      table.tbl-mypage-list {
+        width: 100%;
+        text-align: left;
+        margin-top: 30px;
+
+        th {
+          padding: 15px 0;
+          color: #232328;
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: 2px;
+          line-height: 100%;
+          text-transform: uppercase;
+        }
+        td {
+          font-size: 15px;
+          line-height: 20px;
+          letter-spacing: 0.3px;
+        }
+      }
+
+      table.tbl-mypage-license {
+        width: 100%;
+        text-align: left;
+        margin-top: 29px;
+
+        td {
+          padding-bottom: 10px;
+          font-size: 15px;
+          line-height: 20px;
+          letter-spacing: 0.3px;
+
+          &.td-txt-right {
+            text-align: right;
+          }
+        }
+      }
+
+      table.tbl-mypage-dashboard-order {
+        margin: 30px 0 0 0;
+
+        td {
+          line-height: 30px;
+          border-bottom: 1px solid #e5e6eb;
+
+          &.td-order-tit {
+            text-align: center;
+          }
+        }
+      }
+
+      table.tbl-mypage-atelier-item {
+        width: 100%;
+        text-align: right;
+        margin-top: 23px;
+
+        td {
+          padding-bottom: 10px;
+
+          &:first-child {
+            text-align: left;
+          }
+
+          &.td-txt-right {
+            text-align: right;
+          }
+
+          .btn-mypage-download {
+            display: block;
+            float: right;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+
+      .mypage-dashboard-txt-purchased {
+        padding-top: 30px;
+        text-align: left;
+      }
+
+      .atelier-none {
+        padding-bottom: 44px;
+        text-align: center;
+        border-bottom: 1px solid #828791;
+
+        p {
+          padding: 15px 0 20px;
+        }
+
+        .icon-market {
+          width: 24px;
+          height: 32px;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  .btn-mypage-download {
+    display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background:url('~static/images/common/download_none.svg') no-repeat 0 50%;
+    transition: all .3s ease;
+
+    &:hover {
+      background:url('~static/images/common/download_hover.svg') no-repeat 0 50%;
+    }
+  }
+
+  .btn-license-buy {
+    margin: 5px 0;
+  }
+
+  .btn-invoice {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background:url('~static/images/common/invoice_none.svg') no-repeat 0 50%;
+    transition: all .3s ease;
+
+    &:hover {
+      background:url('~static/images/common/invoice_hover.svg') no-repeat 0 50%;
+    }
+  }
+}
+
+.none {
+  border: none;
+  background: none;
+  box-shadow: none
+}
+
+.mypage-license-date-box {
+  width: 700px;
+  height: 70px;
+  margin: 0 auto 50px;
+  background: url('~static/images/common/box1_left.svg') no-repeat 0 0, url('~static/images/common/box1_right.svg') no-repeat 100% 0;
+
+  ul.mypage-license-date-list {
+    width: 100%;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      width: 49%;
+      height: 70px;
+      padding: 12px 0;
+
+      > h2 {
+        padding-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      &:first-child {
+        border-right: 1px solid rgba(0,0,0, 0.5);
+      }
+    }
+  }
+}
+
+.mypage-account-con-left {
+  float: left;
+  width: 460px;
+}
+
+h1.mypage-account-tit {
+  margin-bottom: 40px;
+  text-align: center;
+
+  > img {
+    padding-right: 20px;
+  }
+}
+
+h2.mypage-account-stit {
+  margin-bottom: 20px;
+  text-align: left;
+
+  > img {
+    padding-right: 20px;
+  }
+}
+
+table.tbl-mypage-myitem-list {
+  width: 100%;
+  border-top: 2px solid #828791;
+  border-bottom: 2px solid #828791;
+  text-align: center;
+
+  th {
+    height: 40px;
+    color:#232328;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #828791;
+    background:url('~static/images/common/tbl_th_line.gif') no-repeat 100% 50%;
+
+    &:last-child {
+      background: none;
+    }
+  }
+
+  td {
+    height: 90px;
+    color:#232328;
+    font-size: 17px;
+    background:url('~static/images/sub/bg_td_line_mypage.gif') no-repeat 100% 50%;
+    vertical-align: middle;
+    border-bottom: 1px solid #c3c3cd;
+
+    &.td-left {
+      padding-left: 20px;
+      text-align: left;
+
+      span {
+        display: inline-block;
+        padding-left: 20px;
+      }
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    &:last-child {
+      background: none;
+    }
+
+    a.btn-mypage-download {
+      display: inline-block;
+      float: none;
+      width: 30px;
+      height: 30px;
+      margin:0 auto;
+    }
+
+    a.btn-small {
+      font-weight: 400;
+      letter-spacing: 1.5px;
+    }
+  }
+}
+
+
+.tabMenu {
+  text-align: left;
+}
+.tabMenu-li {
+  display: inline-block;
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &.active {
+    a {
+      background: none;
+      border-color: #4E5155;
+      color: #4E5155;
+    }
+  }
+}
+
+.tabMenu-link {
+  position: relative;
+  display: block;
+  min-width: 200px;
+  padding: 10px 10px 15px 10px;
+  border: 5px solid #f5f5f5;
+  border-bottom: none;
+  background: #f5f5f5;
+  color: #c3c3cd;
+  text-align: center;
+  text-transform: uppercase;
+}

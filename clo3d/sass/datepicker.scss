@@ -1,0 +1,67 @@
+#app {
+  .mx-datepicker {
+    padding-left: 15px;
+    margin-left: 18px;
+    min-width: 100px !important;
+
+    &:before {
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      margin-top: -10px;
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 20px;
+      background: url('~static/images/common/icon_calendar.svg') no-repeat left center;
+      vertical-align: middle;
+    }
+  }
+  .mx-calendar {
+    font-family: $font-lato;
+  }
+  .mx-calendar-header {
+    font-weight: 600;
+    color: #000;
+  }
+  .mx-datepicker-popup {
+    width: 280px;
+    left: 0;
+    border: none;
+  }
+
+  table.mx-calendar-table {
+    td,
+    th {
+      padding: 0;
+      height: 32px;
+      width: 32px;
+      border: none;
+      background: none;
+    }
+
+    td {
+      font-size: 13px;
+
+      &.current {
+        background-color: #7baee8;
+      }
+    }
+    th {
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+
+  .mx-input {
+    padding: 0;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    box-shadow: none;
+  }
+  .mx-input-icon {
+    display: none;
+  }
+}
+

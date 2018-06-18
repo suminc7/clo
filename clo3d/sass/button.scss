@@ -1,0 +1,385 @@
+@mixin loading() {
+  $color: #dddddd;
+  //color: white;
+  //box-shadow: none;
+  cursor: default;
+  transition: none;
+  //background: $color;
+  background-image: url('~static/images/common/loading_btn.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events:none;
+  &:hover {
+    background: $color;
+    box-shadow: none;
+    color:white;
+  }
+}
+
+
+@mixin disabled() {
+  color:#ddd;
+  box-shadow: 0 0 0 2px #ddd inset !important;
+  cursor: default;
+  transition: none;
+  &:hover {
+    background: transparent;
+    box-shadow: 0 0 0 2px #ddd inset !important;
+    color:#ddd !important;
+  }
+}
+
+
+
+/* Button Style */
+.buttonWrapper {
+  .button {
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.btn-radius {
+  display: inline-block;
+  border-radius: 100px;
+  text-align:center;
+}
+
+.btn-sign-in {
+  margin-left: 20px;
+  width: 100%;
+  height: 30px;
+  text-transform: uppercase;
+}
+
+.btn-create-account {
+  margin-left: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+.btn-small {
+  width: 100px;
+  line-height: 30px;
+}
+
+.btn-normal {
+  width: 150px;
+  line-height: 40px;
+}
+
+.btn-big {
+  width: 250px;
+  line-height: 60px;
+}
+
+.btn-wide {
+  padding: 0 15px;
+  line-height: 40px;
+}
+
+.btn-wideSmall {
+  padding: 0 15px;
+  line-height: 30px;
+}
+
+.btn-inline {
+  width: auto;
+  padding: 0 40px;
+  line-height: 40px;
+}
+
+.btn-color-gray {
+  box-shadow: 0 0 0 2px #828791 inset;
+  background-color:transparent;
+  transition: all .3s ease;
+
+  &:hover {
+    color: $color-white;
+    background-color: #828791;
+  }
+}
+
+.btn-color-blue {
+  box-shadow: 0 0 0 2px $color-blue inset;
+  background-color:transparent;
+  transition: all .3s ease;
+  color: $color-blue;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-blue;
+  }
+  &.disabled {
+    @include disabled;
+  }
+}
+
+.btn-color-white {
+  box-shadow: 0 0 0 2px $color-white inset;
+  background-color:transparent;
+  transition: all .3s ease;
+
+  &:hover {
+    color: $color-black;
+    background-color: $color-white;
+  }
+}
+
+.btn-color-white2 {
+  box-shadow: 0 0 0 2px $color-white-02 inset;
+  background-color:transparent;
+  transition: all .3s ease;
+
+  &:hover {
+    color: $color-default-black;
+    background-color: $color-white-02;
+  }
+}
+
+.btn-color-black {
+  box-shadow: 0 0 0 2px $color-black inset;
+  background-color:transparent;
+  transition: all .3s ease;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-black;
+  }
+}
+
+.btn-color-black2 {
+  box-shadow: 0 0 0 2px $color-default-black inset;
+  background-color:transparent;
+  transition: all .3s ease;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-default-black;
+  }
+}
+
+.btn-play-video {
+  background: url(~static/images/common/img-users-play.svg) no-repeat 0 0;
+  background-size: 200%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+
+  @include media-breakpoint-up(md) {
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+  }
+
+  &.blue {
+    background-position: 100%;
+  }
+
+  &.basic {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 10px auto 0 auto;
+    @include media-breakpoint-up(md) {
+      margin: 30px auto 0 auto;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: none!important;
+  }
+}
+
+
+button {
+  /* FireFox Bug - Button 높이 고정 -*/
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin-top: 0;
+  }
+  &.loading {
+    @include loading;
+  }
+  &:disabled {
+    @include disabled;
+  }
+}
+
+*.loading {
+  @include loading;
+}
+
+
+body.ko,
+body.zh {
+
+  .btn-create-account {
+    margin-left: 20px;
+    width: 100%;
+    height: 30px;
+  }
+
+  .btn-small {
+    width: 100px;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .btn-normal {
+    width: 150px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .btn-big {
+    width: 250px;
+    line-height: 60px;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+
+  .btn-inline {
+    font-weight: 700;
+  }
+
+  .btn-color-blue {
+    box-shadow: 0 0 0 2px $color-blue inset;
+    background-color:transparent;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-blue;
+    }
+    &.disabled {
+      @include disabled;
+    }
+  }
+  .btn-color-white {
+    box-shadow: 0 0 0 2px $color-white inset;
+    background-color:transparent;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $color-black;
+      background-color: $color-white;
+    }
+  }
+
+  .btn-color-white2 {
+    box-shadow: 0 0 0 2px $color-white-02 inset;
+    background-color:transparent;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $color-default-black;
+      background-color: $color-white-02;
+    }
+  }
+
+  .btn-color-black {
+    box-shadow: 0 0 0 2px $color-black inset;
+    background-color:transparent;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-black;
+    }
+  }
+
+  .btn-color-black2 {
+    box-shadow: 0 0 0 2px $color-black inset;
+    background-color:transparent;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-black;
+    }
+  }
+
+  .btn-play-video {
+    background: url(~static/images/common/img-users-play.svg) no-repeat 0 0;
+    background-size: 200%;
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+
+    @include media-breakpoint-up(md) {
+      width: 70px;
+      height: 70px;
+      margin-top: -35px;
+      margin-left: -35px;
+    }
+
+    &.blue {
+      background-position: 100%;
+    }
+
+    &.basic {
+      position: relative;
+      left: auto;
+      top: auto;
+      margin: 10px auto 0 auto;
+      @include media-breakpoint-up(md) {
+        margin: 30px auto 0 auto;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: none!important;
+    }
+  }
+
+
+  button {
+
+    /* FireFox Bug - Button 높이 고정 -*/
+    &::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+      margin-top: 0;
+    }
+
+    &.loading {
+      @include loading;
+    }
+
+    &:disabled {
+      @include disabled;
+    }
+
+  }
+}
+
+
+// FIXME: style.css 로 옮기기
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.inline {
+  display: inline-block !important;
+}

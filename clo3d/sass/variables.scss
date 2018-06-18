@@ -1,0 +1,51 @@
+//전역변수로 변경
+$grid-gutter-width: 20px !global;
+
+// size 변경되면 main.js 수정 필요, 같지않으면 commit 불가!
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1500px;
+$fhd: 1920px;
+
+$grid-breakpoints: (
+        xs: $xs,
+        sm: $sm,
+        md: $md,
+        lg: $lg,
+        xl: $xl,
+        xxl: $xxl,
+        fhd: $fhd
+) !global;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1440px,
+        fhd: 1880px
+) !global;
+
+
+// font color
+$color-default-black: #232328;
+$color-black: #4E5155;
+$color-blue: #7BAEE8;
+$color-white: #FFFFFF;
+$color-gray: #4E5155;
+$color-gray-02: #C3C3CD;
+$color-gray-03: #E5E6EB;
+$color-red: #F25454;
+$color-white-02: #f5f5f5;
+$color-white-03: #ede9e7;
+
+$font-lato-light: LatoWebLight, 'Noto Sans KR', 'Noto Sans SC', sans-serif; // 본문 폰트
+$font-lato: LatoWebRegular,'Noto Sans KR', 'Noto Sans SC', sans-serif;
+$font-avenir: AvenirNextLTPro, 'Noto Sans KR', 'Noto Sans SC', sans-serif; // 제목 폰트
+
+
+$font-notokr: AvenirNextLTPro 'Noto Sans KR', sans-serif;
+$font-zhsimple: AvenirNextLTPro, 'Noto Sans SC', sans-serif;

@@ -1,0 +1,1838 @@
+.icon-etc {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('~static/images/common/icon_etc.svg') no-repeat;
+  background-size: 100px;
+  vertical-align: middle;
+
+  &.icon-comment {
+    background-position: 0 0;
+  }
+  &.icon-sale {
+    background-position: 40% 0;
+  }
+  &.icon-mac {
+    background-position: 60% 0;
+  }
+  &.icon-win {
+    background-position: 80% 0;
+  }
+  &.icon-file {
+    background-position: 100% 0;
+  }
+}
+
+.icon-footer-flag {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('~static/images/common/icon_footer_flag.svg') no-repeat;
+  background-size: 80px;
+  vertical-align: middle;
+
+  &.icon-china {
+    background-position: 0 0;
+  }
+  &.icon-usa {
+    background-position: 33.3% 0;
+  }
+  &.icon-japan {
+    ackground-position: 66.6% 0;
+  }
+  &.icon-korea {
+    background-position: 100% 0;
+  }
+}
+
+.icon-tip-inputcheck {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('~static/images/common/icon_tip_inputcheck.svg') no-repeat;
+  background-size: 140px;
+  vertical-align: middle;
+
+  &.icon-check-white {
+    background-position: 0 0;
+  }
+  &.icon-check-blue {
+    background-position: 20px 0;
+  }
+  &.icon-close-red {
+    background-position: 40px 0;
+  }
+  &.icon-tip {
+    background-position: 60px 0;
+  }
+  &.icon-question {
+    background-position: 80px 0;
+  }
+  &.icon-check-round {
+    background-position: 100px 0;
+  }
+  &.icon-tip-round {
+    background-position: 120px 0;
+  }
+
+}
+
+.icon-mypage {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url('~static/images/common/icon_mypage_menu.svg') no-repeat;
+  background-size: 150px;
+  vertical-align: middle;
+
+  &.icon-home {
+    background-position: 0 0;
+  }
+  &.icon-account {
+    background-position: 25% 0;
+  }
+  &.icon-license {
+    background-position: 50% 0;
+  }
+  &.icon-order {
+    background-position: 75% 0;
+  }
+  &.icon-atelier-items {
+    background-position: 100% 0;
+  }
+  &.icon-admin {
+    background: url('~static/images/common/icon_mypage_admin.svg') no-repeat;
+  }
+}
+
+.icon-ui-style01 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('~static/images/common/ui_1.svg') no-repeat;
+  background-size: 220px;
+  vertical-align: middle;
+
+  &.icon-menu-black {
+    background-position: 0 0;
+  }
+  &.icon-menu-white {
+    background-position: 9.1% 0;
+  }
+  &.icon-close-big-white {
+    background-position: 18.2% 0;
+  }
+  &.icon-close-big-black {
+    background-position: 27.3% 0;
+  }
+  &.icon-search-black {
+    background-position: 36.4% 0;
+  }
+  &.icon-search-white {
+    background-position: 45.5% 0;
+  }
+  &.icon-search-blue {
+    background-position: 54.5% 0;
+  }
+  &.icon-close-sm-white {
+    background-position: 63.6% 0;
+  }
+  &.icon-close-sm-black {
+    background-position: 72.7% 0;
+  }
+  &.icon-depth-open {
+    background-position: 90% 0;
+  }
+  &.icon-depth-close {
+    background-position: 100% 0;
+  }
+}
+
+.icon-bracket {
+  display: inline-block;
+  width: 10px;
+  height: 140px;
+  min-height: 70px;
+  background: url('~static/images/common/img_bracket.svg') no-repeat;
+  background-size: 150px;
+  vertical-align: top;
+
+  &.icon-bracket-70-left {
+    background-position: 0 0;
+  }
+  &.icon-bracket-70-right {
+    background-position:  13.3% 0;
+  }
+
+  &.icon-bracket-110-left {
+    background-position: 26.7% 0;
+  }
+  &.icon-bracket-110-right {
+    background-position: 40% 0;
+  }
+
+  &.icon-bracket-140-left {
+    height: 140px;
+    background-position: 57% 0;
+  }
+  &.icon-bracket-140-right {
+    height: 140px;
+    background-position: 72% 0;
+  }
+}
+
+.icon-features-label {
+  display: inline-block;
+  width: 100%;
+  height: 19px;
+  background: url('~static/images/common/img_nf_label.svg') no-repeat;
+  background-size: auto 38px;
+  vertical-align: top;
+
+  &.icon-label-new {
+    background-position: 0 0;
+  }
+  &.icon-label-improved {
+    background-position: 0 100%;
+  }
+}
+
+.icon-os {
+  display: inline-block;
+  width: 100%;
+  height: 19px;
+  background: url('~static/images/common/img_nf_label.svg') no-repeat;
+  background-size: auto 38px;
+  vertical-align: top;
+
+  &.icon-label-new {
+    background-position: 0 0;
+  }
+  &.icon-label-improved {
+    background-position: 0 100%;
+  }
+}
+
+.icon-dl-os {
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   background: url('~static/images/common/icon_dl_os.svg') no-repeat center center;
+   background-size: 80px;
+   vertical-align: middle;
+
+   &.icon-os-win {
+     background-position: 0 0;
+
+     &.active {
+       background-position: 100% 0;
+     }
+   }
+
+   &.icon-os-mac {
+     background-position: 0 100%;
+
+     &.active {
+       background-position: 100% 100%;
+     }
+   }
+ }
+
+.icon-mypage_product {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url('~static/images/common/img_mypage_product.svg') no-repeat center center;
+  background-size: 100px;
+  vertical-align: middle;
+
+  &.icon-product-clo {
+    background-position: 0 0;
+  }
+
+  &.icon-product-atelier {
+    background-position: 50% 0;
+  }
+}
+
+.icon-market {
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+  background: url('~static/images/common/icon_market.svg') no-repeat center center;
+  background-size: 24px;
+  vertical-align: middle;
+
+  &.icon-market-closet {
+    background-position: 0 0;
+  }
+}
+
+.icon-clients-enterprise-list1 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-01.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list1 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list2 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list3 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list4 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list5 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list2 {
+   display: inline-block;
+   width: 100%;
+   min-width: 220px;
+   max-width: 220px;
+   min-height: 80px;
+   background: url('~static/images/business/img-logo-clients-enterprise-02.png') no-repeat center center;
+   background-size: 200%;
+   vertical-align: middle;
+
+   &.icon-clients-list6 {
+     background-position: 0 0;
+
+     &:hover {
+       background-position: 100% 0;
+     }
+   }
+
+   &.icon-clients-list7 {
+     background-position: 0 25%;
+
+     &:hover {
+       background-position: 100% 25%;
+     }
+   }
+
+   &.icon-clients-list8 {
+     background-position: 0 50%;
+
+     &:hover {
+       background-position: 100% 50%;
+     }
+   }
+
+   &.icon-clients-list9 {
+     background-position: 0 75%;
+
+     &:hover {
+       background-position: 100% 75%;
+     }
+   }
+
+   &.icon-clients-list10 {
+     background-position: 0 100%;
+
+     &:hover {
+       background-position: 100% 100%;
+     }
+   }
+ }
+
+.icon-clients-enterprise-list3 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-03.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list11 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list12 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list13{
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list14 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list15 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list4 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-04.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list16 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list17 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list18 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list19 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list20 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list5 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-05.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list21 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list22 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list23{
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list24 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list25 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list6 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-06.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list26 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list27 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list28 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list29 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list30 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list7 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-07.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list31 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list32 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list33{
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list34 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list35 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list8 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-08.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list36 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list37 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list38{
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list39 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list40 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list9 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-09.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list41 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list42 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list43{
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list44 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list45 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list10 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-10.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list46 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list47 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list48 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list49 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list50 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list11 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-11.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list51 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list52 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list53 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list54 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list55 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list12 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-12.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list56 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list57 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list58 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list59 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list60 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list13 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-13.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list61 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list62 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list63 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list64 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list65 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list14 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-14.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list66 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list67 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list68 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list69 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list70 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list15 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-15.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list71 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list72 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list73 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list74 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list75 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list16 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-16.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list76 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list77 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list78 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list79 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list80 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list17 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-17.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list81 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-clients-list82 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-clients-list83{
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-clients-list84 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-clients-list85 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-enterprise-list18 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 80px;
+  background: url('~static/images/business/img-logo-clients-enterprise-18.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-clients-list86 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+}
+
+.icon-clients-academic-list1 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-01.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list1 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-academic-list2 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-academic-list3 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-academic-list4 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-academic-list5 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-academic-list2 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-02.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list6 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-academic-list7 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-academic-list8 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-academic-list9 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-academic-list10 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-academic-list3 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-03.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list11 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-academic-list12 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-academic-list13{
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-academic-list14 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-academic-list15 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-academic-list4 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-04.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list16 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-academic-list17 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-academic-list18 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-academic-list19 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-academic-list20 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-academic-list5 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-05.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list21 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-academic-list22 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-academic-list23{
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-academic-list24 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-academic-list25 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-academic-list6 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-06.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list26 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-academic-list27 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-academic-list28 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-academic-list29 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-academic-list30 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-academic-list7 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-07.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list31 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-academic-list32 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-academic-list33{
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-academic-list34 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-academic-list35 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-academic-list8 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-08.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list36 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-academic-list37 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-academic-list38{
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-academic-list39 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-academic-list40 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-academic-list9 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-09.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list41 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-academic-list42 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-academic-list43{
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-academic-list44 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-academic-list45 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-academic-list10 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-10.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list46 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-academic-list47 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-academic-list48 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-academic-list49 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-academic-list50 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-academic-list11 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-11.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list51 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+
+  &.icon-academic-list52 {
+    background-position: 0 25%;
+
+    &:hover {
+      background-position: 100% 25%;
+    }
+  }
+
+  &.icon-academic-list53 {
+    background-position: 0 50%;
+
+    &:hover {
+      background-position: 100% 50%;
+    }
+  }
+
+  &.icon-academic-list54 {
+    background-position: 0 75%;
+
+    &:hover {
+      background-position: 100% 75%;
+    }
+  }
+
+  &.icon-academic-list55 {
+    background-position: 0 100%;
+
+    &:hover {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+.icon-clients-academic-list12 {
+  display: inline-block;
+  width: 100%;
+  min-width: 220px;
+  max-width: 220px;
+  min-height: 100px;
+  background: url('~static/images/business/img-logo-clients-academic-12.png') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-academic-list56 {
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 100% 0;
+    }
+  }
+}
+
+.icon-business-solution-list {
+  display: inline-block;
+  width: 100%;
+  width: 50px;
+  height: 50px;
+  background: url('~static/images/business/onoff-business.svg') no-repeat center center;
+  background-size: 200%;
+  vertical-align: middle;
+
+  &.icon-soultion-list1 {
+    background-position: 0 0;
+  }
+
+  &.icon-soultion-list2 {
+    background-position: 0 20%;
+  }
+
+  &.icon-soultion-list3 {
+    background-position: 0 40%;
+  }
+
+  &.icon-soultion-list4 {
+    background-position: 0 60%;
+  }
+
+  &.icon-soultion-list5 {
+    background-position: 0 80%;
+  }
+
+  &.icon-soultion-list6 {
+    background-position: 0 100%;
+  }
+}
+
+.icon-business-customized-list {
+  overflow: hidden;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin:0 auto;
+  background: url('~static/images/business/icon-business.svg') no-repeat center center;
+  background-size: 400px !important;
+  vertical-align: middle;
+
+  &.icon-customized-list1 {
+    background-position: 0 0;
+  }
+
+  &.icon-customized-list2 {
+    background-position: -50px 0;
+  }
+
+  &.icon-customized-list3 {
+    background-position: -100px 0;
+  }
+
+  &.icon-customized-list4 {
+    background-position: -150px 0;
+  }
+
+  &.icon-customized-list5 {
+    background-position: -200px 0;
+  }
+
+  &.icon-customized-list6 {
+    background-position: -250px 0;
+  }
+
+  &.icon-customized-list7 {
+    background-position: -300px 0;
+  }
+
+  &.icon-customized-list8 {
+    background-position: -350px 0;
+  }
+}
+
+.icon-broswer {
+  display: inline-block;
+  width: 100px;
+  height: 70px;
+  background: url('~static/images/common/img-browser.png') no-repeat;
+  background-size: 400px;
+  vertical-align: middle;
+
+  &.os-chrome {
+    background-position: 0 0;
+  }
+  &.os-ie {
+    background-position:  66.6% 0;
+  }
+  &.os-safari {
+    background-position: 100% 0;
+  }
+  &.os-firefox {
+    background-position: 33.3% 0;
+  }
+}
+
+
+
+

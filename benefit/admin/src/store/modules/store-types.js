@@ -1,0 +1,4 @@
+export const GET_ROOM = 'GET_ROOM'
+export const GET_GARMENT_LIST = 'GET_GARMENT_LIST'
+export const GET_GARMENT_ITEM = 'GET_GARMENT_ITEM'
+

@@ -1,0 +1,38 @@
+.swiper-container {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+}
+.swiper-wrapper {
+  width: 999999px;
+  font-size: 0;
+}
+.swiper-slide {
+  display: inline-block;
+}
+.swiper-pagination {
+  text-align: center;
+}
+.swiper-pagination-bullet {
+  display: inline-block;
+  &:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #858582;
+    margin: 5px;
+    display: block;
+    border-radius: 3px;
+
+  }
+  &-active {
+    &:before {
+      background-color: #7BAEE8;
+    }
+
+  }
+}
+
+.helloWorld {
+  color: #000;
+}

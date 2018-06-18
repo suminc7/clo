@@ -1,0 +1,45 @@
+#section6 {
+  background:url(/static/images/img_comingsoon.png) no-repeat center 46%;
+  background-image:url(/static/images/img_comingsoon.svg), none;
+  background-size: 580px;
+
+  footer {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    background: #fff;
+    height: 60px;
+    line-height: 60px;
+    font-size: 10px;
+    color: $grey;
+
+    ul.sns {
+      position: absolute;
+      right:30px;
+      bottom:0;
+
+      li {
+        float: left;
+        width: auto;
+        text-align: left;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  #section6 {
+    background-size: 500px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #section6 {
+    background-size: 200px;
+
+    footer {
+      display: none !important;
+    }
+  }
+}

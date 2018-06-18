@@ -1,0 +1,13 @@
+export const GET_ROOM = 'GET_ROOM'
+export const GET_ROOMS = 'GET_ROOMS'
+export const GET_CHILD_ROOMS = 'GET_CHILD_ROOMS'
+export const GET_ITEMS = 'GET_ITEMS'
+export const STRUCTURE = 'STRUCTURE'
+export const MY_STRUCTURE = 'MY_STRUCTURE'
+export const GET_COMPANY = 'GET_COMPANY'
+export const SET_MYCLOSET_ITEM = 'SET_MYCLOSET_ITEM'
+export const GET_MYCLOSET_ITEM = 'GET_MYCLOSET_ITEM'
+export const LIST_LOADING_STATUS = 'LIST_LOADING_STATUS'
+// export const GET_GARMENT_LIST = 'GET_GARMENT_LIST'
+// export const GET_GARMENT_ITEM = 'GET_GARMENT_ITEM'
+

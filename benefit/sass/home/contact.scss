@@ -1,0 +1,97 @@
+#section5 {
+  h1.tit {margin: 0}
+
+  .emailThumb {
+    width: 320px;
+    height: 320px;
+    margin: 8% auto;
+    background: url(/static/images/img_contact.svg) no-repeat center 50%;
+    text-align:center;
+    p{
+      padding: 130px 0 20px 0;
+      font-size: 11px;
+      color: #fff;
+      font-family: $fontDemi;
+      letter-spacing: 2px;
+    }
+    a {
+      font-size: 20px;
+      color: #fff;
+      font-family: $fontBook;
+      text-decoration: none;
+      line-height: 100%;
+      letter-spacing: 1px;
+    }
+  }
+
+  .benefitLink {
+    a {
+      display: inline-block;
+      margin-right: 27px;
+      padding-right: 27px;
+      background: url(/static/images/bg_sign_line.gif) no-repeat 100% 49%;
+      color: #49494c;
+      font-size: 14px;
+      font-family: $fontHeavy;
+      text-align: left;
+      letter-spacing: 1px;
+      text-decoration: none;
+
+      &:last-child {
+        margin: 0;
+        padding: 0;
+        background: none
+      }
+    }
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 1024px) {
+  #section5 {
+    .emailThumb {
+      margin: 10% auto !important;
+
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  #section5 {
+
+    h1.tit {
+      margin:0 !important;
+    }
+
+    .contactBox {
+      padding: 80px 0;
+    }
+
+    .emailThumb {
+      width: 100%;
+      margin: 0 auto !important;
+      background-size: 280px;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .emailThumb a {
+    font-size: 18px !important;
+  }
+  .benefitLink {
+    a {
+      display: block !important;
+      margin: 0 !important;
+      padding: 0 0 20px 0 !important;
+      font-size: 10px !important;
+      text-align: center !important;
+      background: none !important;
+    }
+  }
+}
+
+@media all and (min-height:660px) and (max-height: 840px) {
+  .emailThumb {
+    margin: 4% auto !important;
+  }
+}

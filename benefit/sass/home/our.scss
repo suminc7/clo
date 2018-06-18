@@ -1,0 +1,388 @@
+#section4 {
+  &.outBox {
+    max-width: 1400px;
+    min-width: 1024px;
+    margin: 0 auto;
+    background: $bgGrey !important;
+
+    .ourlineTop {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      width: 50px;
+      margin-left: -25px;
+      border:1px solid #000;
+    }
+
+    .ourlineBottom {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      width: 50px;
+      margin-left: -25px;
+      border:1px solid #000;
+    }
+
+    .ourSlideBox {
+      height: 100%;
+
+      h1.tit {
+        margin-top: 120px;
+        text-align: left;
+      }
+
+      .slide {
+        max-width: 1400px;
+        margin: 0 auto;
+
+        .ourMenu,
+        .ourContent {
+          width:50%;
+          height:700px;
+
+          ul.ourList {
+            padding: 60px 0 0 100px;
+            clear: both;
+
+            li {
+              display: block;
+              width: auto;
+              padding-bottom: 40px;
+              text-align: left;
+              color: #c1c1c1;
+              font-size: 14px;
+              font-family: $fontHeavy;
+
+              &.active {
+                color: $black;
+              }
+            }
+          }
+        }
+
+        .ourMenu {
+          background: #ffffff;
+        }
+
+        .ourContent {
+          color: #fff;
+          font-size: 14px;
+          text-align: center;
+          background:#000;
+
+          .ourThumb {
+            padding: 10% 10% 8% 10%;
+          }
+
+          h3.tit {
+            font-size: 30px;
+            font-family: $fontHeavy;
+            text-align: left;
+            padding-left: 80px;
+            letter-spacing: 3px;
+          }
+          .ourTxtSpot {
+            padding-left: 80px;
+            text-align: left;
+            line-height: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 1199px) {
+  #section4 {
+    &.outBox {
+      max-width: 100% !important;
+      min-width: 100% !important;
+      margin: 0 auto;
+      background: $bgGrey !important;
+
+      .ourlineTop,
+      .ourlineBottom {
+        display: none
+      }
+
+      .ourSlideBox {
+
+        h1.tit {
+          float: none !important;
+          margin: 0 auto 80px !important;
+          text-align: center !important;
+        }
+
+        .slide {
+          max-width: 100% !important;
+          margin: 0 auto;
+
+          .ourMenu,
+          .ourContent {
+            width:100% !important;
+            height: auto;
+
+            ul.ourList {
+              display: none;
+            }
+          }
+
+          .ourMenu {
+            background: transparent !important;
+
+            li {
+              img {
+                display: block;
+                margin: 0 auto;
+                padding-top: 5px;
+              }
+            }
+          }
+
+          .ourContent {
+            float: none !important;
+            color: $black !important;
+            font-size: 14px;
+            text-align: center;
+            background: transparent !important;
+
+            .ourThumb {
+              width: 75%;
+              margin:0 auto;
+              padding: 0 !important;
+              img {
+                width: 100%;
+              }
+            }
+
+            .outSpot {
+              margin-top: 50px !important;
+
+              ul.ourLocation {
+                overflow: hidden;
+                width: 126px;
+                margin: 20px auto 0;
+                text-align:center;
+
+                li {
+                  float: left;
+                  width: 16px;
+                  height: 16px;
+                  margin-left: 20px;
+                  background:#fff;
+                  @include border-radius(50px);
+
+                  &:first-child {
+                    margin: 0;
+                  }
+
+                  &.active {
+                    background:$lightRed;
+                  }
+                }
+              }
+            }
+
+            h3.tit {
+              margin-top: 0;
+              padding: 0 !important;
+              text-align:center !important;
+            }
+            .ourTxtSpot {
+              padding: 0 !important;
+              text-align: center !important;
+              line-height: 1.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  #section4 {
+    &.outBox {
+      max-width: 100% !important;
+      min-width: 100% !important;
+      margin: 0 auto;
+      background: $bgGrey !important;
+
+      .ourSlideBox {
+        position: relative;
+        @include box-sizing;
+
+        .fp-controlArrow{
+          top: 70%;
+        }
+
+        .fp-controlArrow.fp-prev {
+          left: 20px;
+        }
+        .fp-controlArrow.fp-next {
+          right:20px;
+        }
+
+        h1.tit {
+          float: none !important;
+          margin: 0 auto !important;
+          text-align: center !important;
+        }
+
+        .slide {
+          max-width: 100% !important;
+          margin: 0 auto;
+
+          .ourMenu,
+          .ourContent {
+            width: 100% !important;
+            height: 100% !important;
+
+            ul.ourList {
+              position: absolute;
+              top: 80%;
+              left: 50%;
+              width: 100% !important;
+              margin-left: 0 !important;
+              padding: 0 !important;
+
+              li {
+                float: left;
+                width: auto;
+                padding: 0 0 0 40px;
+                text-align: left;
+                color: $black;
+                font-size: 14px;
+                font-family: $fontHeavy;
+
+                &:first-child {
+                  padding: 0;
+                }
+              }
+            }
+          }
+
+          .ourMenu {
+            position: relative;
+            top: 0;
+            height: auto !important;
+            background: transparent;
+
+            .ourList {
+              display: none;
+              li {
+                img {
+                  display: block;
+                  margin: 0 auto;
+                  padding-top: 5px;
+                }
+              }
+            }
+
+          }
+
+          .ourContent {
+            height: auto !important;
+            margin-top: 64px;
+
+            .ourThumb {
+              padding: 0 !important;
+              width: 45%;
+
+              img {
+                width: 100% !important;
+              }
+            }
+
+            .outSpot {
+              width: 100%;
+              margin-top: 50px;
+
+              ul.ourLocation {
+                overflow: hidden;
+                width: 60px;
+                margin: 20px auto 0;
+                text-align:center;
+
+                li {
+                  float: left;
+                  width: 7px;
+                  height: 7px;
+                  margin-left: 7px;
+                  background:#fff;
+                  @include border-radius(50px);
+
+                  &:first-child {
+                    margin: 0;
+                  }
+
+                  &.active {
+                    background:$lightRed;
+                  }
+                }
+              }
+            }
+
+            h3.tit {
+              font-size: 16px;
+              margin-top: 0 !important;
+              padding: 0 !important;
+              text-align: center !important;
+            }
+            .ourTxtSpot {
+              font-size: 11px;
+              padding: 0 18% !important;
+              text-align: center !important;
+              line-height: 1.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  #section4 {
+    .ourThumb {
+      width: 70% !important;
+      img {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1000px) and (min-height:660px) and (max-height: 840px) {
+  #section4.outBox {
+    max-width: 1200px !important
+  }
+
+  .ourlineTop,
+  .ourlineBottom {
+    display: none !important
+  }
+
+  #section4.outBox .ourSlideBox .slide .ourContent, #section4.outBox .ourSlideBox .slide .ourMenu {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 800px) and (max-height: 1280px) {
+  .ourThumb {
+    padding: 0 10% !important;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 1200px){
+  .ourThumb {
+    padding-top: 10% !important;
+  }
+}
+
+@media all and (min-height:660px) and (max-height: 800px) {
+  .ourThumb {
+    width: 50% !important;
+  }
+}
